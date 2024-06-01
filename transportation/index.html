@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet/scss" href="C:\webpage\mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .home {
+          height: 650px;
+          width: 1300px;
+          background-image: url('https://wallpaperaccess.com/full/2316938.jpg');
+          background-size: 1500px 700px; 
+          text-align: center; 
+      }
+      @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+      H1 {    
+        color: white;
+      }
+      p {
+        font-size: 25px;
+        color: #FFFFFF;
+      }
+      /* CSS */
+      .button-62 {
+        background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+        border: 0;
+        border-radius: 12px;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.5;
+        outline: transparent;
+        padding: 0 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow .2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+      }
+
+      .button-62:not([disabled]):focus {
+        box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+      }
+
+      .button-62:not([disabled]):hover {
+        box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+      }
+      /* Demo styles */
+
+      body {
+          width: 100%;
+          height: 100%;
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--bg)
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">SmartTransitInsights </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+      </div>
+      <div class="home" style="text-align: left;">
+        <div style="height: 200px;"></div>
+        <div style="text-align: center; width: 800px;">
+          <H1>Enhancing Public Transportation Efficiency </H1>
+          <p>and Accessibility Through Data Analysis</p>
+          <!--<button class="startbutton color" >Learn more!</button>-->
+          <div class="wrapper">
+              <button class="button-62" role="button" onclick="learnmore()">learn more!</button>
+          </div>
+          
+          <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+          <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                  <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                  </filter>
+              </defs>
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <script>
+      function learnmore(){
+        window.open('C:/transportation/login.html', '_blank'); 
+      }
+    </script>
+  </body>
+</html>
